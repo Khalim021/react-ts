@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "name": "Nike",
+        "price": 200,
+        "img": "/assets/product-10.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Gucci",
+        "price": 500,
+        "img": "/assets/product-12.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Adidass",
+        "price": 300,
+        "img": "/assets/product-4.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Puma",
+        "price": 100,
+        "img": "/assets/product-2.jpg"
+    }, 
+    {
+        "id": 5,
+        "name": "Vuiton",
+        "price": 1000,
+        "img": "/assets/product-8.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Zara",
+        "price": 900,
+        "img": "/assets/product-9.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Vito",
+        "price": 50.87,
+        "img": "/assets/product-14.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Brandy",
+        "price": 700,
+        "img": "/assets/product-11.jpg"
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
