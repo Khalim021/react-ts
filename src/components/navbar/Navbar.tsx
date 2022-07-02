@@ -2,8 +2,10 @@ import React from 'react';
 import { Nav, Container, Navbar as NavbarNav, Button } from 'react-bootstrap';
 import {NavLink} from 'react-router-dom'
 import { BiCartAlt } from "react-icons/bi";
+import { useCartContext } from '../../context/CartContext';
 
 function Navbar() {
+  const {openCart, cartQuantity} = useCartContext();
   return (
     <NavbarNav sticky='top' className='bg-white shadow-sm mb-3'>
       <Container>
@@ -12,7 +14,13 @@ function Navbar() {
           <Nav.Link to="/about" as={NavLink}>About</Nav.Link>
           <Nav.Link to="/shop" as={NavLink}>Shop</Nav.Link>
         </Nav>
-        <Button style={{width: '2.5rem', height: '2.5rem', position: 'relative'}} className='rounded-circle' variant='outline-primary'>
+        {cartQuantity > 0 && (
+        <Button 
+        onClick={openCart} 
+        style={{width: '2.5rem', height: '2.5rem', position: 'relative'}} 
+        className='rounded-circle' 
+        variant='outline-primary'
+        >
           <BiCartAlt/>
           <div className='rounded-circle bg-danger d-flex justify-content-center align-items-center'
           style={{
@@ -25,9 +33,10 @@ function Navbar() {
             transform: 'translate(25%, 25%)'
           }}
           >
-            2
+            {cartQuantity}
           </div>
         </Button>
+        )}
       </Container>
     </NavbarNav>
   );
